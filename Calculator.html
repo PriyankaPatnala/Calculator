@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<style> 
+			input 
+			{
+    			width: 100%;
+			}
+		</style>
+		<script src="calculator.js"></script>
+		
+	</head>
+	<body>
+	<h2 align="center" textcolor="blue">Calculator</h2>
+	
+	<table border=2 bordercolor="black" align="center" textalign="center" >
+		
+		<tr>
+			<td colspan=6><input type="text" id="textId" size="50%"></td>
+		</tr>
+		<tr align="center">
+			<td><input type="button" value="7"  onclick=" expression('7')" ></td>
+			<td><input type="button" value="8"  onclick=" expression('8')"></td>
+			<td><input type="button" value="9"  onclick=" expression('9')"></td>
+			<td><input type="button" value="DEL" onclick="backspace()"></td>
+		    <td><input type="button" value="C"  onclick="resetfn()"></td>
+			
+		</tr>
+		<tr align="center">
+			
+		<td><input type="button" value="4" onclick=" expression('4')"></td>
+		<td><input type="button" value="5" onclick=" expression('5')"></td>
+		<td><input type="button" value="6" onclick=" expression('6')"></td>
+		<td><input type="button" value="/"  onclick=" expression('/')"></td>
+		<td><input type="button" value="*" onclick=" expression('*')"></td>
+		</tr>
+		
+		
+		<tr align="center">	
+		<td><input type="button" value="1" onclick=" expression('1')"></td>
+		<td><input type="button" value="2" onclick=" expression('2')"></td>
+		<td><input type="button" value="3" onclick=" expression('3')"></td>
+		<td><input type="button" value="+" onclick=" expression('+')"></td>
+		<td><input type="button" value="-" onclick=" expression('-')"></td>
+		</tr>
+		
+		<tr align="center">	
+		
+		<td><input type="button" value="." onclick=" expression('.')"></td>
+		<td><input type="button" value="0" onclick=" expression('0')"></td>
+		<td><input type="button" value="(" onclick=" expression('(')"></td>
+		<td><input type="button" value=")" onclick=" expression(')')"></td>	
+		<td><input type="button" value="=" onclick="evaluateFn()"></td>
+		
+		
+		</tr>
+		
+	</table>
+</body>
+</html>
